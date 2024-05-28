@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --pink: #ffadbb;
+    --dark: #1e1c2a;
+}
+
+.image {
+    background-image: url('/src/imagens/bolo-fundo-recebido.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    text-align: center;
+}
+
+.text-container {
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--pink);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--dark);
+}
