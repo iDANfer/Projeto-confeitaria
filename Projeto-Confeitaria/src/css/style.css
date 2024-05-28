@@ -254,7 +254,7 @@ body{
 
 .body_form {
     color: var(--dark);
-    background: url('/Projeto-confeitaria-main/Projeto-Confeitaria/src/imagens/bolo-fundo.jpg') no-repeat center center fixed;
+    background: url('/src/imagens/bolo-fundo.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
