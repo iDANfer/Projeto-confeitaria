@@ -15,10 +15,17 @@
             <a href="#" class="logo">M<spam>aravilha </spam>M<spam>istério</spam></a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Catálogo</a></li>
-                <li class="nav-item"><a href="#">Sobre</a></li>
-                <li class="nav-item"><a href="/form.html">Contato</a></li>
-                <li class='bx bx-search-alt-2'></li>
+                <li class="nav-catalogo"><a href="#catalogo-itens">Catálogo</a>
+                    <div class="catalogo_button">
+                        <ul>
+                            <li><a href="#bolos-item">Bolos</a></li>
+                            <li><a href="#doces-item">Doces</a></li>
+                            <li><a href="#salgados-item">Salgados</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#footer">Sobre</a></li>
+                <li class="nav-item"><a href="form.html" target="_blank">Contato</a></li>
             </ul>
             <div class="menu">
                 <spam class="bar"></spam>
@@ -29,12 +36,13 @@
     </header>
 
     <main>
+  
         <section class="home">
             <div class="home-text">
                 <h4 class="text-home">Bem-vindo Maravilha Mistério</h4>
                 <h1 class="text-h1">Diferente de tudo que você já viu</h1>
                 <p class="text-p">Você é nosso convidade mais que especial para experimentar nossas Maravilhas Misteriosas</p>
-                <a href="/form.html" class="home-pec">Peça já o Seu</a>
+                <a href="form.html" target="_blank" class="home-pec">Peça já o Seu</a>
             </div>
 
             <div class="home-img">
@@ -42,7 +50,7 @@
             </div>
         </section>
         <!-- Catálogo de bolos  -->
-        <section class="catalogo">
+        <section id="bolos-item" class="catalogo">
             <h2 class="catalogo-title">Bolos</h2>
             <div class="catalogo-item">
                 <img src="src/imagens/bolo-de-chocolate.png" alt="Bolo de Chocolate">
@@ -88,7 +96,7 @@
         </section>
 
         <!-- Catálogo de doces -->
-        <section class="catalogo">
+        <section id="doces-item" class="catalogo">
             <h2 class="catalogo-title">Doces</h2>
             <div class="catalogo-item">
                 <img src="src/imagens/brigadeiro.png" alt="Brigadeiro">
@@ -129,7 +137,7 @@
         </section>
 
         <!-- Catálogo de salgados -->
-        <section class="catalogo">
+        <section id="salgados-item" class="catalogo">
             <h2 class="catalogo-title">Salgados</h2>
             <div class="catalogo-item">
                 <img src="src/imagens/Pastel-de-Carne.png" alt="Pastel de Carne">
@@ -139,7 +147,7 @@
             </div>
             <div class="catalogo-item">
                 <img src="src/imagens/Kibe-de-Carne.png" alt="Kibe de Carne">
-                <h3 class="item-title">Beijinho</h3>
+                <h3 class="item-title">Kibe de Carne</h3>
                 <p class="item-description">Sinta o sabor delicioso dessa combinação incrível de temperos e carne suculenta que vai surpreender até mesmo os reis das arábias.</p>
                 <a href="#" class="item-button">Comprar Agora</a>
             </div>
@@ -171,6 +179,16 @@
 
     </main>
 
+    
+    <footer>
+        <div id="footer"class="contato-info">
+            <h3>Entre em Contato</h3>
+            <p>Telefone: (83) 9999-9999</p>
+            <p>Email: contato@confeitariamaravilhamisterio.com</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
+
 </body>
 </html>
+

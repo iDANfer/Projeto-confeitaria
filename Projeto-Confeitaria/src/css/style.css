@@ -11,7 +11,7 @@
 }
 
 :root{
-    --red: #d63a25;
+    --pink: #ffadbb;
     --white: #fff;
     --dark: #1e1c2a;
 }
@@ -19,6 +19,7 @@
 body{
     color: var(--dark);
     background: var(--white);
+    align-items: center;
 }
 
 .navegar{
@@ -34,7 +35,7 @@ body{
 }
 
 .navegar .logo{
-    color: var(--red);
+    color: var(--pink);
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -57,7 +58,7 @@ body{
 }
 
 .navegar ul li a:hover{
-    color: var(--red);
+    color: var(--pink);
 }
 
 .navegar i{
@@ -82,7 +83,7 @@ body{
 
 .menu .bar:nth-child(1), 
 .menu .bar:nth-child(3){
-    background-color: var(--red);
+    background-color: var(--pink);
 }
 
 .home{
@@ -100,7 +101,7 @@ body{
 
 .home-text .text-home{
     font-size: 1rem;
-    color: var(--red);
+    color: var(--pink);
     margin-bottom: 1rem;
 }
 .home-text .text-h1{
@@ -114,7 +115,7 @@ body{
 
 .home-pec{
     padding: 15px 45px;
-    background: var(--red);
+    background: var(--pink);
     color: var(--white);
     border-radius: 10px;
     font-weight: 700;
@@ -122,7 +123,7 @@ body{
 }
 
 .home-pec:hover{
-    background: #fc4c35;
+    background: #ef6f82;
 }
 
 .home-img img{
@@ -168,6 +169,18 @@ body{
     margin-bottom: 1rem;
 }
 
+.catalogo-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: max-width 0.3s ease-in-out;
+}
+
+.catalogo-item:hover img {
+    max-width: 110%;
+}
+
+
 .item-title{
     font-size: 1.5rem;
     color: var(--dark);
@@ -182,7 +195,7 @@ body{
 
 .item-button{
     padding: 10px 20px;
-    background: var(--red);
+    background: var(--pink);
     color: var(--white);
     border-radius: 5px;
     font-weight: 700;
@@ -190,7 +203,7 @@ body{
 }
 
 .item-button:hover{
-    background: #fc4c35;
+    background: #ef6f82 ;
 }
 
 @media (max-width: 900px) {
@@ -240,79 +253,38 @@ body{
     }
 }
 
-/*Formulario*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
-
-:root {
-    --red: #d63a25;
-    --white: #fff;
-    --dark: #1e1c2a;
+.catalogo_button{
+    display: none;
 }
 
-.body_form {
-    color: var(--dark);
-    background: url('/src/imagens/bolo-fundo.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
+.navegar ul li:hover .catalogo_button{
+    display: block;
+    position: absolute;
+    margin-top: 1px;
+    background-color: var(--white);
+}
+.navegar ul li:hover .catalogo_button ul{
+    display: block;
+    margin: 5px;
 }
 
-.container {
-    max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 50px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: var(--red);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-input[type="submit"] {
-    background-color: var(--red);
+footer {
+    background: var(--pink);
     color: var(--white);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 16px;
+    padding: 20px 0;
+    height: 300px;
 }
 
-input[type="submit"]:hover {
-    background-color: #c82c1f;
+.contato-info {
+    text-align: center;
+}
+
+.contato-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.contato-info p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
 }
